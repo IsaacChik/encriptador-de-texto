@@ -100,21 +100,17 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*
-    padding: 32px;
-    */
     padding: 15.1875rem 2rem;
     
     border-radius: 32px;
 }
 
 .mensajeMostrado__conTexto{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 32px;
     
-    display: none;
 }
 
 .mensajeMostrado__conTexto__textoEncriptado:read-only{

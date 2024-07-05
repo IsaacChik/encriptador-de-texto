@@ -15,23 +15,20 @@
     </header>
     <main>
         <div class="mensajeEscrito">
-            <textarea class="mensajeEscrito__texto" placeholder="Ingrese el texto aquí"></textarea>
-            <!--
-            <input  class="mensajeEscrito__texto" type="text" placeholder="Ingrese el texto aquí">
-            -->
+            <textarea id="mensajeEscrito__textArea" class="mensajeEscrito__texto" placeholder="Ingrese el texto aquí"></textarea>
             
             <section class="mensajeEscrito__bottom">
                 <p class="mensajeEscrito__bottom__aviso"><img src="./images/exclamation.svg" alt="exclamation"> Solo letras minúsculas y sin acentos</p>
                 <div class="mensajeEscrito__bottom__botones">
-                    <a class="mensajeEscrito__bottom__botones__encriptar mensajeEscrito__bottom__botones__diseño" href="">Encriptar</a>
-                    <a class="mensajeEscrito__bottom__botones__desencriptar mensajeEscrito__bottom__botones__diseño" href="">Desencriptar</a>
+                    <a onclick="encriptarDesencriptar(true);" class="mensajeEscrito__bottom__botones__encriptar mensajeEscrito__bottom__botones__diseño">Encriptar</a>
+                    <a onclick="encriptarDesencriptar(false);" class="mensajeEscrito__bottom__botones__desencriptar mensajeEscrito__bottom__botones__diseño">Desencriptar</a>
                 </div>
                 
             </section>
         </div>
-        <div class="mensajeMostrado">
+        <div id="divMensaje" class="mensajeMostrado">
             
-            <section class="mensajeMostrado__sinTexto">
+            <section id="sectionSinTexto" class="mensajeMostrado__sinTexto">
                 <img class="mensajeMostrado__sinTexto__imagen" src="./images/Muñeco.png" alt="persona con una lupa">
                 <div class="mensajeMostrado__sinTexto__aviso">
                     <p class="mensajeMostrado__sinTexto__aviso__txt1">Ningún mensaje fue encontrado</p>
@@ -40,9 +37,9 @@
                 </div>
             </section>
         
-            <section class="mensajeMostrado__conTexto">
+            <section id="sectionConTexto" class="mensajeMostrado__conTexto">
                 
-                    <textarea class="mensajeMostrado__conTexto__textoEncriptado" readonly></textarea>
+                    <textarea id="textareaMensajeEncriptado" class="mensajeMostrado__conTexto__textoEncriptado" readonly></textarea>
                 
                 
                 
@@ -54,6 +51,8 @@
     <footer>
         <p>Created by Isaac Chiquito Jasso, on July 5, 2024</p>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
