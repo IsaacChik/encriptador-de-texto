@@ -1,3 +1,4 @@
+document.getElementById('mensajeEscrito__textArea').value="";
 function encriptarDesencriptar(desEn) {
     
     const texto = document.getElementById('mensajeEscrito__textArea').value;
@@ -25,7 +26,7 @@ function encriptarDesencriptar(desEn) {
         document.getElementById('sectionSinTexto').style.display="none";
         document.getElementById('divMensaje').style.padding="2rem";
         document.getElementById('sectionConTexto').style.display="flex";
-        document.getElementById('textareaMensajeEncriptado').value=textoEncriptado;
+        document.getElementById('textareaMensaje').value=textoEncriptado;
     }else{
         if(texto === ""){
             document.getElementById('sectionConTexto').style.display="none";
@@ -36,4 +37,11 @@ function encriptarDesencriptar(desEn) {
         }
         
     }
+}
+
+function copiar(event){
+    event.preventDefault();
+    const textoACopiar = document.getElementById('textareaMensaje');
+    textoACopiar.select();
+    document.execCommand('copy');
 }

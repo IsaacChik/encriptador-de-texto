@@ -29,7 +29,7 @@
         <div id="divMensaje" class="mensajeMostrado">
             
             <section id="sectionSinTexto" class="mensajeMostrado__sinTexto">
-                <img class="mensajeMostrado__sinTexto__imagen" src="./images/Muñeco.png" alt="persona con una lupa">
+                <img id="imagenM" class="mensajeMostrado__sinTexto__imagen" src="./images/Muñeco.png" alt="persona con una lupa">
                 <div class="mensajeMostrado__sinTexto__aviso">
                     <p class="mensajeMostrado__sinTexto__aviso__txt1">Ningún mensaje fue encontrado</p>
                     <p class="mensajeMostrado__sinTexto__aviso__txt2">Ingresa el texto que desees encriptar o
@@ -39,11 +39,11 @@
         
             <section id="sectionConTexto" class="mensajeMostrado__conTexto">
                 
-                    <textarea id="textareaMensajeEncriptado" class="mensajeMostrado__conTexto__textoEncriptado" readonly></textarea>
+                    <textarea id="textareaMensaje" class="mensajeMostrado__conTexto__textoEncriptado" readonly></textarea>
                 
                 
                 
-                <a class="mensajeEscrito__bottom__botones__diseño" href="">Copiar</a>
+                <a onclick="copiar(event);" class="mensajeEscrito__bottom__botones__diseño" href="">Copiar</a>
             </section>
 
         </div>
