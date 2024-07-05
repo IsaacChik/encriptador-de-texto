@@ -9,15 +9,20 @@ html{
     font-family: "Inter", sans-serif;
 }
 body{
-    background-color: #E5E5E5;
+    background-color: #F3F5FC;
     box-sizing: border-box;
 }
 
+header{
+    padding: 40px 0px 0px 40px;
+    width: 10%;
+    position: fixed;
+}
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 2.5rem;
     gap: 80px;
 }
 
@@ -68,16 +73,24 @@ main{
      text-decoration: none;
      text-align: center;
      width: 328px;
-     border: 1px solid blue;
+     border: 1px solid #0A3871;
      padding: 24px;
+     color: #0A3871;
 }
 .mensajeEscrito__bottom__botones__encriptar{
+    /*
    color: white;
+   */
+/*
    background-color: #0A3871;
+   */
 }
 .mensajeEscrito__bottom__botones__desencriptar{
+    
+    /*
     color: #0A3871;
     background-color: #D8DFE8;
+*/
 }
 /*____________________________________________________________*/
 
@@ -87,14 +100,40 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 243px 32px;
+    /*
+    padding: 32px;
+    */
+    padding: 15.1875rem 2rem;
+    
     border-radius: 32px;
+}
+
+.mensajeMostrado__conTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    
+    display: none;
+}
+
+.mensajeMostrado__conTexto__textoEncriptado:read-only{
+    color: #495057;
+    width: 100%;
+
+    height: 45.04rem;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 24px;
+    resize: none;
 }
 
 .mensajeMostrado__sinTexto{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
 }
 .mensajeMostrado__sinTexto__imagen{
     width: 21rem;
@@ -105,6 +144,7 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1rem;
 }
 .mensajeMostrado__sinTexto__aviso__txt1{
     font-weight: 700;
@@ -113,4 +153,14 @@ main{
 .mensajeMostrado__sinTexto__aviso__txt2{
     font-weight: 400;
     font-size: 1rem;
+}
+
+
+footer{
+    background-color: #0A3871;
+    color: white;
+    padding: 0.1875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }

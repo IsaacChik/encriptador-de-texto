@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <img src="./images/Logo.png" alt="Logo de Alura Latam">
+    </header>
     <main>
         <div class="mensajeEscrito">
             <textarea class="mensajeEscrito__texto" placeholder="Ingrese el texto aquí"></textarea>
@@ -19,7 +21,7 @@
             -->
             
             <section class="mensajeEscrito__bottom">
-                <p class="mensajeEscrito__bottom__aviso"><img src="./assets/exclamation.svg" alt="exclamation"> Solo letras minúsculas y sin acentos</p>
+                <p class="mensajeEscrito__bottom__aviso"><img src="./images/exclamation.svg" alt="exclamation"> Solo letras minúsculas y sin acentos</p>
                 <div class="mensajeEscrito__bottom__botones">
                     <a class="mensajeEscrito__bottom__botones__encriptar mensajeEscrito__bottom__botones__diseño" href="">Encriptar</a>
                     <a class="mensajeEscrito__bottom__botones__desencriptar mensajeEscrito__bottom__botones__diseño" href="">Desencriptar</a>
@@ -28,27 +30,30 @@
             </section>
         </div>
         <div class="mensajeMostrado">
+            
             <section class="mensajeMostrado__sinTexto">
-                <img class="mensajeMostrado__sinTexto__imagen" src="./assets/Muñeco.png" alt="persona con una lupa">
+                <img class="mensajeMostrado__sinTexto__imagen" src="./images/Muñeco.png" alt="persona con una lupa">
                 <div class="mensajeMostrado__sinTexto__aviso">
                     <p class="mensajeMostrado__sinTexto__aviso__txt1">Ningún mensaje fue encontrado</p>
                     <p class="mensajeMostrado__sinTexto__aviso__txt2">Ingresa el texto que desees encriptar o
                         desencriptar.</p>
                 </div>
             </section>
-            <section hidden="true" class="mensajeMostrado__conTexto">
-                <p class="mensajeMostrado__conTexto__textoEncriptado">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime atque aliquid, nisi ut
-                    cupiditate animi consequuntur facere impedit velit officia vero minima distinctio itaque
-                    perspiciatis ab totam! Inventore, similique.
-                    Laboriosam, maxime at aut molestiae veritatis eos vero perspiciatis esse excepturi quod, unde
-                    dolorum? Explicabo unde illum aliquam nemo vel saepe? Beatae aspernatur nisi debitis pariatur quia
-                    accusamus omnis magnam.
-                </p>
+        
+            <section class="mensajeMostrado__conTexto">
+                
+                    <textarea class="mensajeMostrado__conTexto__textoEncriptado" readonly></textarea>
+                
+                
+                
+                <a class="mensajeEscrito__bottom__botones__diseño" href="">Copiar</a>
             </section>
+
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Created by Isaac Chiquito Jasso, on July 5, 2024</p>
+    </footer>
 </body>
 
 </html>
