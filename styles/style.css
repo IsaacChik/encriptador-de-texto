@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 80px;
+}
+
+
+.mensajeEscrito{
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    width: 34.5%;
+    gap: 1rem;
+}
+
+.mensajeEscrito__texto{
+    
+    color: #0A3871;
+    width: auto;
+    /*
+    height: 635px;
+    */
+    height: 39.6875rem;
+   
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 2rem;
+    resize: none;
+}
+
+.mensajeEscrito__bottom{
+    display: flex;
+    flex-direction: column;
+}
+.mensajeEscrito__bottom__aviso{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0.0625rem;
+}
+.mensajeEscrito__bottom__botones{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.mensajeEscrito__bottom__botones__diseño{
+    font-size: 1rem;
+    border-radius: 1.5rem;
+     text-decoration: none;
+     text-align: center;
+     width: 328px;
+     border: 1px solid blue;
+     padding: 24px;
+}
+.mensajeEscrito__bottom__botones__encriptar{
+   color: white;
+   background-color: #0A3871;
+}
+.mensajeEscrito__bottom__botones__desencriptar{
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+/*____________________________________________________________*/
+
+.mensajeMostrado{
+    width: 25%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 243px 32px;
+    border-radius: 32px;
+}
+
+.mensajeMostrado__sinTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mensajeMostrado__sinTexto__imagen{
+    width: 21rem;
+    height: 19rem;
+}
+.mensajeMostrado__sinTexto__aviso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.mensajeMostrado__sinTexto__aviso__txt1{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.mensajeMostrado__sinTexto__aviso__txt2{
+    font-weight: 400;
+    font-size: 1rem;
+}
