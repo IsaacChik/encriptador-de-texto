@@ -10,40 +10,47 @@
 </head>
 
 <body>
+
     <header>
         <img src="./images/Logo.png" alt="Logo de Alura Latam">
     </header>
     <main>
+        <p class="minimoWidth">Su pantalla es muy delgada y no se notarán los elementos.</p>
         <div class="mensajeEscrito">
-            <textarea id="mensajeEscrito__textArea" class="mensajeEscrito__texto" placeholder="Ingrese el texto aquí"></textarea>
-            
+            <textarea id="mensajeEscrito__textArea" class="mensajeEscrito__texto"
+                placeholder="Ingrese el texto aquí"></textarea>
+
             <section class="mensajeEscrito__bottom">
-                <p class="mensajeEscrito__bottom__aviso"><img src="./images/exclamation.svg" alt="exclamation"> Solo letras minúsculas y sin acentos</p>
+                <p id="aviso" class="mensajeEscrito__bottom__aviso"><img src="./images/exclamation.svg"
+                        alt="exclamation"> Solo letras minúsculas y sin acentos</p>
                 <div class="mensajeEscrito__bottom__botones">
-                    <a onclick="encriptarDesencriptar(true);" class="mensajeEscrito__bottom__botones__encriptar mensajeEscrito__bottom__botones__diseño">Encriptar</a>
-                    <a onclick="encriptarDesencriptar(false);" class="mensajeEscrito__bottom__botones__desencriptar mensajeEscrito__bottom__botones__diseño">Desencriptar</a>
+                    <a onclick="encriptarDesencriptar(true);"
+                        class="mensajeEscrito__bottom__botones__encriptar mensajeEscrito__bottom__botones__diseño">Encriptar</a>
+                    <a onclick="encriptarDesencriptar(false);"
+                        class="mensajeEscrito__bottom__botones__desencriptar mensajeEscrito__bottom__botones__diseño">Desencriptar</a>
                 </div>
-                
+
             </section>
         </div>
         <div id="divMensaje" class="mensajeMostrado">
-            
+
             <section id="sectionSinTexto" class="mensajeMostrado__sinTexto">
-                <img id="imagenM" class="mensajeMostrado__sinTexto__imagen" src="./images/Muñeco.png" alt="persona con una lupa">
+                <img id="imagenM" class="mensajeMostrado__sinTexto__imagen" src="./images/Muñeco.png"
+                    alt="persona con una lupa">
                 <div class="mensajeMostrado__sinTexto__aviso">
                     <p class="mensajeMostrado__sinTexto__aviso__txt1">Ningún mensaje fue encontrado</p>
                     <p class="mensajeMostrado__sinTexto__aviso__txt2">Ingresa el texto que desees encriptar o
                         desencriptar.</p>
                 </div>
             </section>
-        
+
             <section id="sectionConTexto" class="mensajeMostrado__conTexto">
-                
-                    <textarea id="textareaMensaje" class="mensajeMostrado__conTexto__textoEncriptado" readonly></textarea>
-                
-                
-                
-                <a onclick="copiar(event);" class="mensajeEscrito__bottom__botones__diseño" href="">Copiar</a>
+
+                <textarea id="textareaMensaje" class="mensajeMostrado__conTexto__textoEncriptado" readonly></textarea>
+
+
+
+                <a id="btnCopiar" onclick="copiar(event);" class="mensajeEscrito__bottom__botones__diseño">Copiar</a>
             </section>
 
         </div>

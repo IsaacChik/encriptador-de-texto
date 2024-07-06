@@ -11,10 +11,11 @@ html{
 body{
     background-color: #F3F5FC;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 header{
-    padding: 40px 0px 0px 40px;
+    padding: 2.5rem 0px 0px 2.5rem;
     width: 10%;
     position: fixed;
 }
@@ -24,9 +25,12 @@ main{
     align-items: center;
     padding: 2.5rem;
     gap: 80px;
+    
 }
 
-
+.minimoWidth{
+    display: none;
+}
 .mensajeEscrito{
     font-weight: 400;
     display: flex;
@@ -54,8 +58,10 @@ main{
 .mensajeEscrito__bottom{
     display: flex;
     flex-direction: column;
+    gap: 0.875rem;
 }
 .mensajeEscrito__bottom__aviso{
+    color: #495057;
     display: flex;
     gap: 0.5rem;
     font-size: 0.75rem;
@@ -77,21 +83,17 @@ main{
      padding: 24px;
      color: #0A3871;
 }
-.mensajeEscrito__bottom__botones__encriptar{
-    /*
-   color: white;
-   */
+.mensajeEscrito__bottom__botones__diseño:hover{
+    color: white;
+    background-color: #0A3871;
+    box-shadow: 0 0 1rem #0A3871;
+    cursor: pointer;
+}
 /*
-   background-color: #0A3871;
-   */
-}
-.mensajeEscrito__bottom__botones__desencriptar{
-    
-    /*
-    color: #0A3871;
-    background-color: #D8DFE8;
-*/
-}
+.mensajeEscrito__bottom__botones__desencriptar:hover{
+    color: white;
+    background-color: #0A3871;
+}*/
 /*____________________________________________________________*/
 
 .mensajeMostrado{
@@ -100,8 +102,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     padding: 15.1875rem 2rem;
-    
+
+    box-shadow: 0 0 1.5rem 0 rgb(97, 97, 97);
     border-radius: 32px;
 }
 
@@ -115,7 +119,7 @@ main{
 
 .mensajeMostrado__conTexto__textoEncriptado:read-only{
     color: #495057;
-    width: 100%;
+    width: auto;
 
     height: 45.04rem;
     border: none;
@@ -153,10 +157,121 @@ main{
 
 
 footer{
-    background-color: #0A3871;
-    color: white;
-    padding: 0.1875rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+    width: 10%;
+    font-size: 0.75rem;
+    background-color: none;
+    color: #495057;
+    padding: 0.1875rem 0 1rem 2.5rem;
+    display: flex;   
+    position: absolute;
+    bottom: 0;
 }
+
+
+/*_____________ ANIMACIONES (Inicio) ____________*/
+
+@keyframes parpadeoAviso {
+    0%, 100% {color: #495057;}
+    50% {color: red; box-shadow: 0 0 1rem 0.2rem red;}
+}
+
+.parpadeando{
+    animation: parpadeoAviso 0.6s ease-in-out 3;
+}
+
+
+
+/*_____________ ANIMACIONES (Fin) ____________*/
+
+/*_____________ RESIZE (Inicio) ____________*/
+/*1004*/
+    @media(max-width:1396px){
+        header{
+            padding: 40px 0px 0px 40px;
+            width: 100%;
+            position:sticky;
+        }
+        main{
+            flex-direction: column;
+            padding: 0 7rem;
+        }
+
+        .mensajeEscrito{
+            width: 100%;
+        }
+
+        .mensajeEscrito__texto{
+            height: 12rem;
+        }
+        .mensajeMostrado{
+            padding: 2rem;
+            width: 100%;
+        }
+        .mensajeMostrado__sinTexto__imagen{
+            display:none;
+        }
+        .mensajeMostrado__conTexto{
+            width: 100%;
+        }
+        .mensajeMostrado__conTexto__textoEncriptado:read-only{
+            width: 100%;
+            height: 11rem;
+        }
+    }
+
+
+@media(max-width:1004px){
+
+    header{
+        padding: 1rem 0px 0px 1rem;
+        width: 100%;
+        position: sticky;
+    }
+    main{
+        margin-top: 1rem;
+        padding: 0 4rem;
+    }
+    .mensajeEscrito__bottom__botones{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mensajeEscrito__bottom__botones__diseño{
+        width: 80%;
+    }
+    footer{
+        width: 80%;
+        padding: 0 0 2.5rem 1.5rem;
+        margin-top: 2rem;
+        position:relative;
+    }
+}
+
+@media(max-width:240px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .minimoWidth{
+        display: flex;
+        color: black;
+        text-align: center;
+    }
+    header{
+        display: none;
+    }
+    .mensajeEscrito{
+        display: none;
+    }
+    .mensajeMostrado{
+        display: none;
+    }
+    
+    footer{
+        display: none;
+    }
+}
+/*410*/
+/*_____________ RESIZE (Fin) ____________*/
+
