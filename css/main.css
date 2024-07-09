@@ -61,6 +61,8 @@ main{
     gap: 0.875rem;
 }
 .mensajeEscrito__bottom__aviso{
+    width: 50%;
+    border-radius: 2rem;
     color: #495057;
     display: flex;
     gap: 0.5rem;
@@ -75,6 +77,9 @@ main{
 
 .mensajeEscrito__bottom__botones__diseño{
     font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 1.5rem;
      text-decoration: none;
      text-align: center;
@@ -82,6 +87,7 @@ main{
      border: 1px solid #0A3871;
      padding: 24px;
      color: #0A3871;
+     user-select: none;
 }
 .mensajeEscrito__bottom__botones__diseño:hover{
     color: white;
@@ -170,15 +176,23 @@ footer{
 
 /*_____________ ANIMACIONES (Inicio) ____________*/
 
-@keyframes parpadeoAviso {
+@keyframes parpadeoAvisoMalo {
     0%, 100% {color: #495057;}
-    50% {color: red; box-shadow: 0 0 1rem 0.2rem red;}
+    50% {color: #495057; box-shadow: 0 0 1.7rem 0.2rem red;}
 }
 
-.parpadeando{
-    animation: parpadeoAviso 0.6s ease-in-out 3;
+.parpadeandoM{
+    animation: parpadeoAvisoMalo 0.7s ease-in-out 2;
 }
 
+@keyframes parpadeoAvisoBueno {
+    0%, 100% {color: #495057; }
+    50% {color: #495057; box-shadow: 0 0 1.7rem 0.2rem #68ff68;}
+}
+
+.parpadeandoB{
+    animation: parpadeoAvisoBueno 1.3s ease-in-out 1;
+}
 
 
 /*_____________ ANIMACIONES (Fin) ____________*/
@@ -234,7 +248,7 @@ footer{
     .mensajeEscrito__bottom__botones{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; 
     }
     .mensajeEscrito__bottom__botones__diseño{
         width: 80%;
