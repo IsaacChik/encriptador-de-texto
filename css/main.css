@@ -292,6 +292,7 @@ footer {
         width: 80%;
         padding: 0 0 2.5rem 1.5rem;
         margin-top: 2rem;
+        position: relative;
     }
 
 }
