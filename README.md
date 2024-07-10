@@ -53,12 +53,23 @@ Analicemos cada elemento de la pantalla:
 |--------|----------|--------|
 | `Área donde ingresa el texto`|Aqui se ingresará el texto a encriptar o desencriptar, respetando las reglas enteriores.|![imagen](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/810512d7-e8c9-4334-8af4-c9b6142c4e2a)|
 | `Aviso`|Este aviso nos indicara si estamos escribiendo algo que no cumple con las reglas.|![Proyecto_AVISO](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/cb34b2a1-8e4c-481f-8fb6-06e0462cb2b8)|
-|`Área donde se mostrara el texto y botón copiar`|Aquí se presentará el texto encriptado o desencriptado, y el botón tiene la función de copiar el texto encriptado o desencriptado.|![Proyecto_funcionamiento](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/c6332661-2659-4bc7-b0b0-0f28e5c2de7c)|
+|`Área donde se mostrara el texto y botón copiar`|Aquí se presentará el texto encriptado o desencriptado, y el botón tiene la función de copiar el texto.|![Proyecto_funcionamiento](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/c6332661-2659-4bc7-b0b0-0f28e5c2de7c)|
 |`Botón para cambiar tema`| Este botón le ayudará a cambiar el tema de la página a una paleta de colores mas osucura y amigable a la vista.|![Proyecto_CambiarTema](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/655f71da-9f6b-4b00-a5a6-4b3b01f7d225)|
+
+## Es responsivo
+Se adapta al tamaño de la pantalla.
+![Proyecto_responsivo](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/24f0bd5a-9147-4778-8b11-153117803d0f)
+
 
 ## Tecnologías utilizadas
 - JavaScript
 - HTML5
 - CSS
 - PicsArt (Para crear el diseño del icono de Cambio de Tema)
+
+## Autor
+
+[<img src="https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/25f55e19-6f84-413f-9360-547aa00a3cb4" width=115><br><sub>Isaac Chiquito Jasso</sub>](https://github.com/IsaacChik)
+
+El diseño fue gracias a **Alura Latam**.
 
