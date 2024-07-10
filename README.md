@@ -2,7 +2,7 @@
 
    <p align="center">
    <img src="https://img.shields.io/badge/STATUS-FINALIZADO-green">
-     <img src="https://img.shields.io/badge/fecha de lanzamiento-pendiente-orange">
+     <img src="https://img.shields.io/badge/fecha de finalización-9/07/24-orange">
    </p>
 
 ![Captura del proyecto](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/ccf44092-2243-4a51-9960-235ab0b95631)
