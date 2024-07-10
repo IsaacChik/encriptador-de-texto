@@ -53,23 +53,12 @@ Analicemos cada elemento de la pantalla:
 |--------|----------|--------|
 | `Área donde ingresa el texto`|Aqui se ingresará el texto a encriptar o desencriptar, respetando las reglas enteriores.|![imagen](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/810512d7-e8c9-4334-8af4-c9b6142c4e2a)|
 | `Aviso`|Este aviso nos indicara si estamos escribiendo algo que no cumple con las reglas.|![Proyecto_AVISO](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/cb34b2a1-8e4c-481f-8fb6-06e0462cb2b8)|
-|`Área donde se mostrara el texto`|Aquí se presentará el texto encriptado o desencriptado.|
-
-
-- `Área donde se mostrará el texto _ Si hay errores o no ha ingresado nada: `
-- `Botón encriptar`: Al dar clic, si el texto cumple con las reglas, se encriptará el texto.
-- `Botón desencriptar`: Al dar clic, si el texto cumple con las reglas, se desencriptará el texto.
-- `Área donde se mostrará el texto _ Encriptando "Prueba"`:
-- `Área donde se mostrará el texto _ Encriptando "Prueba"`:
-
+|`Área donde se mostrara el texto y botón copiar`|Aquí se presentará el texto encriptado o desencriptado, y el botón tiene la función de copiar el texto encriptado o desencriptado.|![Proyecto_funcionamiento](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/c6332661-2659-4bc7-b0b0-0f28e5c2de7c)|
+|`Botón para cambiar tema`| Este botón le ayudará a cambiar el tema de la página a una paleta de colores mas osucura y amigable a la vista.|![Proyecto_CambiarTema](https://github.com/IsaacChik/encriptador-de-texto/assets/125986097/655f71da-9f6b-4b00-a5a6-4b3b01f7d225)|
 
 ## Tecnologías utilizadas
 - JavaScript
 - HTML5
 - CSS
-<!--
-<p align="center">
-  🚧 Comenzando con el proyecto. 🚧
-</p>
+- PicsArt (Para crear el diseño del icono de Cambio de Tema)
 
--->
